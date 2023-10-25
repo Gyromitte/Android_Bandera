@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <!--Rectangulo Verde Superior -->
+    <View
+        android:id="@+id/rectanguloVerdeSuperior"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="#00FF00"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!--Blanco-->
+    <View
+        android:layout_width="0dp"
+        android:layout_height = "0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rectanguloVerdeSuperior"
+        app:layout_constraintBottom_toTopOf="@id/rectanguloVerdeInferior"
+        />
+
+    <ImageView
+        android:id="@+id/imagenView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/mexicoescudopng" />
+
+
+
+
+
+
+
+    <!-- Rectángulo Verde Inferior -->
+    <View
+        android:id="@+id/rectanguloVerdeInferior"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
